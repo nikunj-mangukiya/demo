@@ -1,0 +1,94 @@
+{
+    "info": {
+        "_postman_id": "7dc91d6e-5694-47bc-bce5-09d3a0fb4332",
+        "name": "Naim-Freelance",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "21737016"
+    },
+    "item": [
+        {
+            "name": "Create Invoice",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"date\":\"2023-08-03\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:8000/api/invoice/",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "invoice",
+                        ""
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Create Invoice Items",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"units\":2,\n    \"description\":\"test\",\n    \"amount\":2,\n    \"invoice_id\":2\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:8000/api/invoice-items/",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "invoice-items",
+                        ""
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Invoice",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {},
+                "url": {
+                    "raw": "http://localhost:8000/api/invoice",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "invoice"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
