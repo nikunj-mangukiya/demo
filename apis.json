@@ -89,6 +89,103 @@
                 }
             },
             "response": []
+        },
+        {
+            "name": "get specific invoice by id",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:8000/api/invoice?id=2",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "invoice"
+                    ],
+                    "query": [
+                        {
+                            "key": "id",
+                            "value": "2"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "get specific invoice item by id",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:8000/api/invoice-items?id=2",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "invoice-items"
+                    ],
+                    "query": [
+                        {
+                            "key": "id",
+                            "value": "2"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "get all invoice items",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": "http://localhost:8000/api/invoice-items"
+            },
+            "response": []
         }
     ]
 }
